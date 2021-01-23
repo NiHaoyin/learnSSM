@@ -7,5 +7,5 @@ import java.util.List;
 
 @Repository
 public interface MenuDao {
-    public List<MainMenu> getMenu();
+    public List<MainMenu> getMenus();
 }

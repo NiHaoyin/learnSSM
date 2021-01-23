@@ -27,4 +27,9 @@ public class LoginController {
         }
         return JSON.toJSONString(res);
     }
+
+    @RequestMapping("/test")
+    public String testHandler(@RequestParam String username){
+        return username;
+    }
 }

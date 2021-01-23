@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.nihaoyin.healthmanagement.dao.MenuDao">
-    <select id="getMenu" resultType="com.nihaoyin.healthmanagement.bean.User">
+    <select id="getMenus" resultType="com.nihaoyin.healthmanagement.bean.MainMenu">
         SELECT id FROM sportplay.user
         WHERE username=#{username} AND password=#{password}
     </select>

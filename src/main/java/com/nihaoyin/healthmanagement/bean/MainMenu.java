@@ -6,7 +6,7 @@ public class MainMenu {
     private int id;
     private String title;
     private String path;
-    private List<SubMenu> sMenu;
+    private List<SubMenu> subMenu;
 
     public MainMenu(){
 
@@ -15,7 +15,7 @@ public class MainMenu {
         this.id = id;
         this.title = title;
         this.path = path;
-        this.sMenu = sMenu;
+        this.subMenu = sMenu;
     }
 
     public void setId(int id) {
@@ -30,8 +30,8 @@ public class MainMenu {
         this.path = path;
     }
 
-    public void setsMenu(List<SubMenu> sMenu) {
-        this.sMenu = sMenu;
+    public void setSubMenu(List<SubMenu> sMenu) {
+        this.subMenu = sMenu;
     }
 
     public int getId() {
@@ -46,8 +46,8 @@ public class MainMenu {
         return path;
     }
 
-    public List<SubMenu> getsMenu() {
-        return sMenu;
+    public List<SubMenu> getSubMenu() {
+        return subMenu;
     }
 
     @Override
@@ -56,7 +56,7 @@ public class MainMenu {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", path='" + path + '\'' +
-                ", sMenu=" + sMenu +
+                ", sMenu=" + subMenu +
                 '}';
     }
 }

@@ -37,4 +37,13 @@ public class SubMenu {
     public void setPath(String path) {
         this.path = path;
     }
+
+    @Override
+    public String toString() {
+        return "SubMenu{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", path='" + path + '\'' +
+                '}';
+    }
 }
